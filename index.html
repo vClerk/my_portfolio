@@ -6,7 +6,11 @@
     <title>3D Portfolio - Interactive Experience</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Fallback fonts in case Google Fonts don't load */
+        body { font-family: 'Exo 2', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        .hero-title, .section-title, .nav-logo h1 { font-family: 'Orbitron', 'Courier New', monospace; }
+    </style>
 </head>
 <body>
     <!-- Loading Screen -->
@@ -373,9 +377,7 @@
     </main>
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/simple-libs.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/scene.js"></script>
     <script src="js/animations.js"></script>
