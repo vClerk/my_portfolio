@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full Stack Developer Portfolio - Modern web applications and innovative solutions">
+    <meta name="keywords" content="full stack developer, web developer, portfolio, JavaScript, React, Node.js">
+    <meta name="author" content="Your Name">
+    <title>Your Name - Full Stack Developer Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="Home">
+                <span class="logo-text">YN</span>
+            </a>
+            
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+                <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+                <li role="none"><a href="#experience" class="nav-link" role="menuitem">Experience</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </button>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section" role="banner">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hi, I'm</span>
+                        <span class="name">Your Name</span>
+                        <span class="title">Full Stack Developer</span>
+                    </h1>
+                    <p class="hero-description">
+                        I create modern, scalable web applications with cutting-edge technologies.
+                        Passionate about crafting exceptional user experiences and robust backend solutions.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image">
+                        <div class="code-animation">
+                            <div class="code-line"></div>
+                            <div class="code-line"></div>
+                            <div class="code-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-intro">
+                            I'm a passionate full stack developer with over 5 years of experience creating 
+                            digital solutions that combine beautiful design with powerful functionality.
+                        </p>
+                        <p>
+                            My journey in web development started with curiosity about how websites work, 
+                            and has evolved into a deep expertise in modern frameworks, cloud technologies, 
+                            and scalable architecture design.
+                        </p>
+                        <p>
+                            When I'm not coding, you can find me exploring new technologies, contributing to 
+                            open source projects, or sharing knowledge with the developer community.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Client Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                            <span>Your Photo Here</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-content">
+                    <div class="skills-category">
+                        <h3 class="category-title">Frontend Development</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">HTML5</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="95"></div>
+                                </div>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">CSS3</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="90"></div>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js-square" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="92"></div>
+                                </div>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-react" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">React</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="88"></div>
+                                </div>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-vuejs" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">Vue.js</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-sass" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">Sass/SCSS</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="87"></div>
+                                </div>
+                                <span class="skill-percentage">87%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3 class="category-title">Backend Development</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-node-js" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="90"></div>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-python" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">Python</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="85"></div>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">MongoDB</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="88"></div>
+                                </div>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">PostgreSQL</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="82"></div>
+                                </div>
+                                <span class="skill-percentage">82%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-server" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">Express.js</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="89"></div>
+                                </div>
+                                <span class="skill-percentage">89%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-fire" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">Firebase</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="80"></div>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3 class="category-title">Tools & Technologies</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-git-alt" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">Git</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="93"></div>
+                                </div>
+                                <span class="skill-percentage">93%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-docker" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">Docker</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="78"></div>
+                                </div>
+                                <span class="skill-percentage">78%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-aws" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">AWS</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="75"></div>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-cog" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">Webpack</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="80"></div>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">Responsive Design</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="95"></div>
+                                </div>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-rocket" aria-hidden="true"></i>
+                                </div>
+                                <span class="skill-name">Performance Optimization</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="87"></div>
+                                </div>
+                                <span class="skill-percentage">87%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" aria-label="View E-Commerce Platform live demo">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View E-Commerce Platform source code">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-Commerce Platform</h3>
+                            <p class="project-description">
+                                A full-featured e-commerce platform with user authentication, shopping cart, 
+                                payment integration, and admin dashboard.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-tasks" aria-hidden="true"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" aria-label="View Task Management App live demo">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View Task Management App source code">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Task Management App</h3>
+                            <p class="project-description">
+                                A collaborative task management application with real-time updates, 
+                                team collaboration features, and advanced filtering.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-chart-line" aria-hidden="true"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" aria-label="View Analytics Dashboard live demo">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View Analytics Dashboard source code">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Analytics Dashboard</h3>
+                            <p class="project-description">
+                                A comprehensive analytics dashboard with interactive charts, 
+                                real-time data visualization, and custom reporting features.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">FastAPI</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" aria-label="View Weather App live demo">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View Weather App source code">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Weather App</h3>
+                            <p class="project-description">
+                                A responsive weather application with location-based forecasts, 
+                                interactive maps, and detailed weather analytics.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">OpenWeather API</span>
+                                <span class="tech-tag">Leaflet</span>
+                                <span class="tech-tag">CSS Grid</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="job-title">Senior Full Stack Developer</h3>
+                            <h4 class="company">Tech Innovations Inc.</h4>
+                            <span class="duration">2022 - Present</span>
+                            <p class="job-description">
+                                Lead development of scalable web applications serving 100K+ users. 
+                                Architected microservices infrastructure and mentored junior developers.
+                            </p>
+                            <ul class="achievements">
+                                <li>Improved application performance by 40% through optimization</li>
+                                <li>Led migration to cloud infrastructure reducing costs by 30%</li>
+                                <li>Implemented CI/CD pipelines improving deployment efficiency</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="job-title">Full Stack Developer</h3>
+                            <h4 class="company">Digital Solutions Ltd.</h4>
+                            <span class="duration">2020 - 2022</span>
+                            <p class="job-description">
+                                Developed and maintained multiple client projects using modern web technologies. 
+                                Collaborated with design teams to create pixel-perfect implementations.
+                            </p>
+                            <ul class="achievements">
+                                <li>Delivered 15+ successful projects on time and within budget</li>
+                                <li>Reduced bug reports by 50% through comprehensive testing</li>
+                                <li>Introduced React.js increasing development speed by 25%</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="job-title">Frontend Developer</h3>
+                            <h4 class="company">StartUp Ventures</h4>
+                            <span class="duration">2019 - 2020</span>
+                            <p class="job-description">
+                                Focused on creating responsive and interactive user interfaces. 
+                                Worked closely with UX designers to implement intuitive user experiences.
+                            </p>
+                            <ul class="achievements">
+                                <li>Built responsive designs supporting all device types</li>
+                                <li>Improved page load times by 60% through optimization</li>
+                                <li>Collaborated with backend team on API integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Work Together</h3>
+                        <p>
+                            I'm always interested in new opportunities and exciting projects. 
+                            Whether you have a question or want to work together, I'd love to hear from you.
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <span>your.email@example.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                <span>Your City, Your Country</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="LinkedIn profile">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="GitHub profile">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter profile">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="CodePen profile">
+                                <i class="fab fa-codepen" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required aria-describedby="name-error">
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required aria-describedby="email-error">
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required aria-describedby="subject-error">
+                            <span class="error-message" id="subject-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <div class="loading-spinner" aria-hidden="true"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Your Name. All rights reserved.</p>
+                    <p>Built with ❤️ using HTML, CSS, and JavaScript</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
